@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<script type="text/javascript">
+	var k = 0;
+	var arr = [];
+	for (var i = 0; i <=1000000;i++) {
+		arr[i] = Math.round(Math.random()*3);
+		if (arr[i] == 0) {
+			k +=1;
+		}
+	}
+	alert('Кол-во красных: ' + k);
+</script>
+</html>
