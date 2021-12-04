@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<script type="text/javascript">
+
+let inf_cust = {
+name: "John",
+age: 30,
+city: "Moscow",
+mail: "aaa@mail.ru",
+phone: "546787398",
+surname: "Black"
+};
+let order = {
+name_dish: "krevetki, wine",
+time: 15,
+
+};
+let restr = {
+name: "Moscow rest",
+star: 12,
+city: "Moscow, Tverskya",
+mail: "Mosres@mail.ru",
+phone: "535533",
+};
+
+
+order.sayInf = function(){
+ if (this.time == 15){
+	if (inf_cust.age > 18) {
+	alert(inf_cust.name + ' ' + inf_cust.surname + ' order from ' + restr.city);
+	} else {
+		alert("no order");
+	}
+ }
+ else if (this.time < 15) {
+	alert("No cust");
+ } else {
+ alert("wrong");
+ }
+};
+order.sayInf();
+</script>
+</html>
