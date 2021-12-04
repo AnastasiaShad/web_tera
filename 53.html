@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<script type="text/javascript">
+
+function showN() {
+
+var arr = [];
+	for (var i = 0; i<=15; i++) {
+		arr[i] = Math.round(Math.random()*40) -10;
+		if (arr[i] < 0) {
+			arr[i] = arr[i]*arr[i];
+		}
+	}
+	alert(arr)
+
+}
+
+showN(); 
+</script>
+</html>
