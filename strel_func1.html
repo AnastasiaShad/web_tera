@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+<script type="text/javascript">
+
+let a = parseInt(prompt("Введите число"))
+let b = parseInt(prompt("Введите число"))
+let c = parseInt(prompt("Введите действие, 1 -  сложение, 2 - вычитание, 3 - умножение, 4 - деление"))
+
+let sum = (a,b) => {
+	let result = a+b;
+	return result
+};
+let raz = (a,b) => {
+	let result = a-b;
+	return result
+};
+let mul = (a,b) => {
+	let result = a*b;
+	return result
+};
+let del = (a,b) => {
+	let result = a/b;
+	return result
+};
+if (c == 1) {
+alert( sum(a,b) )
+}
+if (c == 2){
+alert( raz(a,b) )
+};
+if (c == 3){
+alert( mul(a,b) )
+};
+if (c==4){
+alert( del(a,b) )
+};	
+
+</script>
+</html>
